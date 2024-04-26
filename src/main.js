@@ -37,3 +37,9 @@
 // }
 
 // console.log(i)
+
+const array = [1,2,3,4];
+array.push(10)
+array = [3,4,5]
+array = "Hello"
+console.log(array)
