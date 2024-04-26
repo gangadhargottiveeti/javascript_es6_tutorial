@@ -206,3 +206,24 @@
 // }
 
 // fetchData("http://universities.hipolabs.com/search?country=United+States")
+
+
+
+// Generators
+
+function *g1(){
+    console.log("Hello");
+    yield 'Yield 1 ran ...';
+    console.log("World");
+    yield 'Yield 2 ran ...';
+    return 'Returned...';
+}
+
+var g = g1();
+
+// console.log(g.next());
+// console.log(g.next().value)
+
+for(let val of g){
+    console.log(val);
+}
